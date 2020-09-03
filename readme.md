@@ -53,7 +53,7 @@ commands
 ![Spyro](MainImage.png)
 
 
-![Spyro](b.png)
+![Spyro](Capture.jpg)
 
 
 
