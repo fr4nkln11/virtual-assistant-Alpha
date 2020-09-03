@@ -50,10 +50,10 @@ Show commands
 commands
 
 
-![Spyro](MainImage.png)
+![Spyro](a.png)
 
 
-![Spyro](Capture.png)
+![Spyro](b.png)
 
 
 
