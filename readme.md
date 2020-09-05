@@ -1,6 +1,6 @@
 # Virtual Assistant Spyro
 
-Programed in python with PySimpleGUI.
+Programed in Python with PySimpleGUI.
 
 Spyro is an virtual voice assistant service. It can understand human speech and perform basic task designed by the client.
 
