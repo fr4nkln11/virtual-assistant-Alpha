@@ -61,5 +61,5 @@ Change themes in settings
 
 ![Alpha](Capture.PNG)
 
-![Alpha](Capture.PNG)
+![Alpha](Capture1.PNG)
 
