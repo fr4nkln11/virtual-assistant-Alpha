@@ -57,5 +57,9 @@ pip3 install -r requirements.txt
 
 python3 alpha.py
 
+Change themes in settings
 
+![Alpha](Capture.PNG)
+
+![Alpha](Capture.PNG)
 
