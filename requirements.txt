@@ -1,7 +1,0 @@
-pysimplegui
-pyttsx3
-wikipedia
-SpeechRecognition
-ecapture
-wolframalpha
-PyAudio
