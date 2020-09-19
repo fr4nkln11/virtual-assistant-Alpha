@@ -1,0 +1,8 @@
+PySimpleGUI
+pyttsx3
+wikipedia
+SpeechRecognition
+ecapture
+wolframalpha
+PyAudio
+requests
