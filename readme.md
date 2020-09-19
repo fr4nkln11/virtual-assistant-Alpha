@@ -1,6 +1,6 @@
 # Virtual Assistant Alpha
 
-![Alpha](alpha.gif)
+![Alpha](alpha/alpha.gif)
 
 
 Alpha is an virtual voice assistant service. It can understand human speech and perform basic task designed by the client.
