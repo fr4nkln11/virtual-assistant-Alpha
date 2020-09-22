@@ -19,13 +19,10 @@
 # How it works
 
 ```
-Alpha is an virtual voice assistant service. 
-It can understand human speech and perform basic 
-task designed by the client.
+Alpha is an virtual voice assistant service. It can understand
+human speech and perform basic task designed by the client.
 
-When the user specify the appropriate trigger 
-words  Alpha, Alpha gets activated and executes 
-the user commands.
+When the user specify the appropriate trigger words  Alpha, Alpha gets activated and executes the user commands.
 
 Alpha Hello, Hi or Hey" (Greets the user according to time)
 
