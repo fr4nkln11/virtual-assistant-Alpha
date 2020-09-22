@@ -30,7 +30,7 @@ Alpha Hello, Hi or Hey" (Greets the user according to time)
 The implemented Voice assistant can perform the following tasks:
 
 
-Opens a wepage : Alpha open Youtube, G-Mail, Google Chrome, Facebook
+Opens a webpage: Alpha open Youtube, G-Mail, Google Chrome, Facebook
 User: Alpha, Open Youtube
 
 Tell time
