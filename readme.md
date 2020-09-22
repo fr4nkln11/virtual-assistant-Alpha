@@ -1,8 +1,24 @@
 # Virtual Assistant Alpha
 
+[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
+
+[![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/adrijano/virtual-assistant-Alpha/)
+
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/adrijano/virtual-assistant-Alpha/graphs/commit-activity)
+
 ![Alpha](alpha.gif)
 
+![Adrijan's github stats](https://github-readme-stats.vercel.app/api?username=adrijano&show_icons=true)
 
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=PFB6A6HLAQHC2&source=url)
+
+# If you like it give it a star
+
+[![GitHub stars](https://img.shields.io/github/stars/adrijano/crypto-watcher.svg?style=social&label=Star&maxAge=2592000)](https://github.com/adrijano/virtual-assistant-Alpha)
+
+# How it works
+
+```
 Alpha is an virtual voice assistant service. It can understand human speech and perform basic task designed by the client.
 
 When the user specify the appropriate trigger words  Alpha, Alpha gets activated and executes the user commands.
@@ -47,19 +63,34 @@ Alpha, joke
 
 Show commands
 Alpha, commands
+```
 
 
 # How to use:
 
-Python
+### Python3+
+```
+git clone https://github.com/adrijano/virtual-assistant-Alpha.git
 
-pip3 install -r requirements.txt
+cd virtual-assistant-Alpha && pip install -r requirements.txt
 
-python3 alpha.py
-
-Change themes in settings
+python alpha.py
+```
+![Alpha](Capture.PNG)
 
 ![Alpha](Capture.PNG)
 
-![Alpha](Capture1.PNG)
+## Donations
+If you would like to support me, donations are very welcome.
+
+```
+You can use Paypal to donate using your own credit card. 
+The payment is processed by PayPal but you don't need to have a
+PayPal account or sign-up for one if you are paying by credit card.
+
+You can also use your own Paypal account to donate.
+```
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=PFB6A6HLAQHC2&source=url)
+
+[![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://github.com/adrijano/virtual-assistant-Alpha/)
 
