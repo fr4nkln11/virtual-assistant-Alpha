@@ -50,7 +50,7 @@ Ask geographical and computational questions
 User: Alpha, weather
 Predict Weather of different Cities
 
-User: Hey Alpha , Wikipedia Ruby
+User: Alpha , Wikipedia Ruby
 The voice assistant abstarcts first 3 lines of wikipedia and gives the information to the user.
 
 Ask Alpha about what task it can perform and who created it
