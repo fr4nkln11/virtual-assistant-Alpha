@@ -14,7 +14,7 @@
 
 # If you like it give it a star
 
-[![GitHub stars](https://img.shields.io/github/stars/adrijano/virtual-assistant-Alpha.svg?style=social&label=Star&maxAge=2592000)](https://github.com/adrijano/virtual-assistant-Alpha)
+[![GitHub stars](https://img.shields.io/github/stars/adrijano/virtual-assistant-Alpha.svg?style=social&label=Star&maxAge=0)](https://github.com/adrijano/virtual-assistant-Alpha)
 
 # How it works
 
