@@ -19,10 +19,10 @@
 # How it works
 
 ```
-Alpha is an virtual voice assistant service. It can understand
-human speech and perform basic task designed by the client.
+Alpha is a virtual voice assistant service. It can understand
+human speech and perform basic tasks designed by the client.
 
-When the user specify the appropriate trigger words  Alpha,
+When the user specifies the appropriate trigger words  Alpha,
 Alpha gets activated and executes the user commands.
 
 Alpha Hello, Hi or Hey" (Greets the user according to time)
@@ -41,20 +41,20 @@ User: Hey Alpha, news?
 open CNN page
 
 Captures a photo
-User:Alpha, Take a photo or camera
+User: Alpha, Take a photo or camera
 
 Searches data from web
-User: Alpha, Search Butterfly images from web
+User: Alpha, Search Butterfly images from the web
 
 Ask geographical and computational questions
 User: Alpha, weather
 Predict Weather of different Cities
 
-User: Alpha , Wikipedia Ruby
-The voice assistant abstarcts first 3 lines of wikipedia and gives the information to the user.
+User: Alpha, Wikipedia Ruby
+The voice assistant abstracts the first 3 lines of Wikipedia and gives the information to the user.
 
 Ask Alpha about what task it can perform and who created it
-User: Alpha, Who created you? / Alpha , What can you do
+User: Alpha, Who created you? / Alpha, What can you do
 
 Log off your pc when required
 User: Alpha , log off or sing out
