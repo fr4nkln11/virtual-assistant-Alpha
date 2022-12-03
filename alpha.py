@@ -45,12 +45,9 @@ def takeCommand():
         return statement
 
 def wakeWord(text):
-    WAKE_WORDS = ['alpha'] 
+    WAKE_WORDS = ['alpha']
     text = text.lower()
-    for phrase in WAKE_WORDS:
-        if phrase in text:
-            return True
-    return False
+    return any(phrase in text for phrase in WAKE_WORDS)
 
 
 
@@ -85,7 +82,8 @@ def save_settings(settings_file, settings, values):
 def create_settings_window(settings):
     sg.theme(settings['theme'])
 
-    def TextLabel(text): return sg.Text(text+':', justification='r', size=(15,1))
+    def TextLabel(text):
+        return sg.Text(f'{text}:', justification='r', size=(15,1))
 
     layout = [  [sg.Text('Settings', font='Any 15')],
                 [TextLabel('Theme'),sg.Combo(sg.theme_list(), size=(20, 20), key='-THEME-')],
@@ -172,26 +170,26 @@ def main():
                     print('Search not include, try again wikipedia and your search')
                 else:
                     continue
-  
-                
+
+
 
             elif 'open youtube' in statement:
                 webbrowser.open_new_tab("https://www.youtube.com")
                 print("Youtube is open now")
                 speak("youtube is open now")
-                
+
 
             elif 'open google' in statement:
                 webbrowser.open_new_tab("https://www.google.com")
                 print("Google chrome is open now")
                 speak("Google chrome is open now")
-                
+
 
             elif 'open gmail' in statement:
                 webbrowser.open_new_tab("https://bit.ly/3iOcR5z")
                 print("Google Mail open now")
                 speak("Google Mail open now")
-                
+
 
             elif "weather" in statement:
                 api_key="394d4ebf0a7de20604147666d665d2d0"
@@ -199,7 +197,7 @@ def main():
                 print("Whats the city name")
                 speak("whats the city name")
                 city_name=takeCommand()
-                complete_url=base_url+"appid="+api_key+"&q="+city_name
+                complete_url = f"{base_url}appid={api_key}&q={city_name}"
                 response = requests.get(complete_url)
                 x=response.json()
                 if x["cod"]!="404":
@@ -208,22 +206,34 @@ def main():
                     current_humidiy = y["humidity"]
                     z = x["weather"]
                     weather_description = z[0]["description"]
-                    print(city_name+" Temperature in kelvin unit = "+
-                          str(current_temperature) +
-                          "\n humidity (in percentage) = " +
-                          str(current_humidiy) +
-                          "\n description = " +
-                          str(weather_description))
-                    speak(city_name+" Temperature in kelvin unit is"+
-                          str(current_temperature) +
-                          "\n humidity in percentage is " +
-                          str(current_humidiy) +
-                          "\n description  " +
-                          str(weather_description))
+                    print(
+                        (
+                            (
+                                f"{city_name} Temperature in kelvin unit = {str(current_temperature)}"
+                                + "\n humidity (in percentage) = "
+                            )
+                            + str(current_humidiy)
+                            + "\n description = "
+                        )
+                        + str(weather_description)
+                    )
+
+                    speak(
+                        (
+                            (
+                                f"{city_name} Temperature in kelvin unit is{str(current_temperature)}"
+                                + "\n humidity in percentage is "
+                            )
+                            + str(current_humidiy)
+                            + "\n description  "
+                        )
+                        + str(weather_description)
+                    )
+
                 else:
                     print(" City Not Found\n")
                     speak(" City Not Found ")
-                    
+
 
             elif 'time' in statement:
                 strTime=datetime.datetime.now().strftime("%H:%M:%S %d-%m-%Y")
@@ -243,19 +253,19 @@ def main():
             elif "who made you" in statement or "who created you" in statement or "who discovered you" in statement:
                 print("I was built by Adrijan")
                 speak("I was built by Adrijan")
-                
+
 
             elif "open facebook" in statement:
                 webbrowser.open_new_tab("https://sl-si.facebook.com/")
                 print("Facebook is open now")
                 speak("Facebook is open now")
-            
+
 
             elif 'news' in statement:
                 news = webbrowser.open_new_tab("https://edition.cnn.com/")
                 print('Here are some headlines from the CNN,Happy reading')
                 speak('Here are some headlines from the CNN,Happy reading')
-                
+
 
             elif "camera" in statement or "take a photo" in statement:
                 ec.capture(0,"robo camera","img.jpg")
@@ -267,7 +277,7 @@ def main():
                 webbrowser.open_new_tab(statement)
                 print('Here is your search')
                 speak('Here is your search')
-                
+
 
             elif 'ask' in statement:
                 print('I can answer to computational and geographical questions and what question do you want to ask now')
@@ -279,7 +289,7 @@ def main():
                 answer = next(res.results).text
                 print(answer)
                 speak(answer)
-                
+
 
             elif "joke" in statement:
                 with open("joke.txt", "r") as m:
@@ -287,7 +297,7 @@ def main():
                     se = random.choice(sents)
                     print(se)
                     speak(se)
-                    
+
 
             elif "commands" in statement:
                 print("commands are:"+"\n"+
@@ -328,7 +338,7 @@ def main():
                       "ask 'your choice'"+
                       "log off or sing out"+
                       "joke")
-                    
+
 
             elif "log off" in statement or "sign out" in statement:
                 print("Ok , your pc will log off in 10 sec make sure you exit from all applications")
